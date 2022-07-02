@@ -10,8 +10,10 @@
 ### Document the newly created function. describe what it does, then print the documentation.
 
 def half_pyramid(num : int):
+    '''half pyramid function start from number 5 to 0'''
     for x in range(num,0,-1):
         for y in range(x,0,-1):
             print(y,end = " ")
         print()
 half_pyramid(5)
+print(half_pyramid.__doc__)
